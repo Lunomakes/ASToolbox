@@ -1,5 +1,5 @@
-Anti-Static ToolBox v 1.0
-Script UI Panel for Adobe® After Effects
+Anti-Static ToolBox v 1.1.3
+Script UI Panel for Adobe® After Effects (tested on After Effects 26.3, JavaScript and Legacy ExtendScript expression engines)
 by James Zelasko
 2023
 
@@ -13,8 +13,18 @@ Installation:
 Drag "Anti-Static ToolBox.jsx" to your After Effects ScriptUI Panels folder:
 
 macOS : Applications/Adobe After Effects <version>/Scripts/ScriptUI Panels
+        (e.g. /Applications/Adobe After Effects 2026/Scripts/ScriptUI Panels)
 
 Windows: Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts\ScriptUI Panels
+
+Restart After Effects, then open the panel from the Window menu.
+It also runs as a floating window via File > Scripts > Run Script File.
+
+The YouTube button needs "Allow Scripts to Write Files and Access Network"
+(Settings > Scripting & Expressions).
+
+The script refers to effects and properties by their English names,
+so it requires After Effects running in English.
 
 --------------------------------
 

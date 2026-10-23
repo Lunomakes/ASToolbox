@@ -1,5 +1,5 @@
 // Anti-Static ToolBox
-// v 1.1.2
+// v 1.1.3 (tested on After Effects 26.3)
 // by James Zelasko
 // This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 // http://creativecommons.org/licenses/by-sa/4.0/
@@ -1564,6 +1564,8 @@ var statictext30 = tab4.add("statictext", undefined, undefined, {name: "staticte
 palette.layout.layout(true);
 palette.layout.resize();
 palette.onResizing = palette.onResize = function () { this.layout.resize(); }
+// Run via File > Scripts > Run Script File: show the floating window (docked panels show themselves)
+if (palette instanceof Window) palette.show();
 
 
 
@@ -2550,7 +2552,7 @@ function RadialPosition(rad, num, duplicate, rotate, threeD) {
       l = selectedLayers[k];
     }
     if(threeD) {
-      l.threeD = true;
+      l.threeDLayer = true;
     }
     if (l.property("Transform").property("Position").dimensionsSeparated) {
       if (l.property("Transform").property("X Position").numKeys == 0) {
